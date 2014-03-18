@@ -901,10 +901,10 @@ public abstract class AbstractBlockChain {
 
         int DiffMode = 1;
         if (params.getId().equals(NetworkParameters.ID_TESTNET)) {
-            if (storedPrev.getHeight()+1 >= 2237) { DiffMode = 2; }
+            if (storedPrev.getHeight()+1 >= 2116) { DiffMode = 2; }
         }
         else {
-            if (storedPrev.getHeight()+1 >= 62773) { DiffMode = 2; }
+            if (storedPrev.getHeight()+1 >= 26754) { DiffMode = 2; }
         }
 
         if		(DiffMode == 1) { checkDifficultyTransitions_V1(storedPrev, nextBlock);/* return;*/}
@@ -913,7 +913,7 @@ public abstract class AbstractBlockChain {
         //checkDifficultyTransitions_V2(storedPrev, nextBlock);
 
         //long elapsed = System.currentTimeMillis() - now;
-        //log.info("Megacoin checkDifficultyTransitions({}) is {} seconds", storedPrev.getHeight(), elapsed/1000);
+        //log.info("Vertcoin checkDifficultyTransitions({}) is {} seconds", storedPrev.getHeight(), elapsed/1000);
     }
     private void checkDifficultyTransitions_V1(StoredBlock storedPrev, Block nextBlock) throws BlockStoreException, VerificationException {
         checkState(lock.isHeldByCurrentThread());
@@ -1297,7 +1297,7 @@ public abstract class AbstractBlockChain {
 
 
     private void KimotoGravityWell(StoredBlock storedPrev, Block nextBlock, long TargetBlocksSpacingSeconds, long PastBlocksMin, long PastBlocksMax)  throws BlockStoreException, VerificationException {
-	/* current difficulty formula, megacoin - kimoto gravity well */
+	/* current difficulty formula, vertcoin - kimoto gravity well */
         //const CBlockIndex  *BlockLastSolved				= pindexLast;
         //const CBlockIndex  *BlockReading				= pindexLast;
         //const CBlockHeader *BlockCreating				= pblock;
@@ -1409,7 +1409,7 @@ public abstract class AbstractBlockChain {
     }
 
     private void KimotoGravityWell_N(StoredBlock storedPrev, Block nextBlock, long TargetBlocksSpacingSeconds, long PastBlocksMin, long PastBlocksMax)  throws BlockStoreException, VerificationException {
-	/* current difficulty formula, megacoin - kimoto gravity well */
+	/* current difficulty formula, vertcoin - kimoto gravity well */
         //const CBlockIndex  *BlockLastSolved				= pindexLast;
         //const CBlockIndex  *BlockReading				= pindexLast;
         //const CBlockHeader *BlockCreating				= pblock;
@@ -1536,7 +1536,7 @@ public abstract class AbstractBlockChain {
 
     }
     private void KimotoGravityWell_N2(StoredBlock storedPrev, Block nextBlock, long TargetBlocksSpacingSeconds, long PastBlocksMin, long PastBlocksMax)  throws BlockStoreException, VerificationException {
-	/* current difficulty formula, megacoin - kimoto gravity well */
+	/* current difficulty formula, vertcoin - kimoto gravity well */
         //const CBlockIndex  *BlockLastSolved				= pindexLast;
         //const CBlockIndex  *BlockReading				= pindexLast;
         //const CBlockHeader *BlockCreating				= pblock;

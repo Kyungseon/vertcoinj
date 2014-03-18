@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.google</groupId>
-  <artifactId>megacoinj-parent</artifactId>
+  <artifactId>vertcoinj-parent</artifactId>
   <version>0.11</version>
   <packaging>pom</packaging>
 
@@ -13,12 +13,12 @@
     <module>tools</module>
   </modules>
 
-  <name>megacoinj Parent</name>
-  <description>Provides the common configuration for the megacoinJ modules</description>
-  <url>https://github.com/HashEngineering/megacoinj</url>
+  <name>vertcoinj Parent</name>
+  <description>Provides the common configuration for the vertcoinJ modules</description>
+  <url>https://github.com/HashEngineering/vertcoinj</url>
 
   <ciManagement>
-    <url>http://ci.megacoinj.org/</url>
+    <url>http://ci.vertcoinj.org/</url>
   </ciManagement>
 
   <licenses>
@@ -91,7 +91,7 @@
         <artifactId>slf4j-api</artifactId>
         <version>1.7.5</version>
       </dependency>
-      <!-- megacoinj consumers are expected to provide their own SLF4J adapters
+      <!-- vertcoinj consumers are expected to provide their own SLF4J adapters
     such as logback, slf4j-log4j12, slf4j-jcl and so on
     see http://www.slf4j.org/faq.html -->
       <dependency>
