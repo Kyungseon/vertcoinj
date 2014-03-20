@@ -18,7 +18,7 @@ public class CoinDefinition {
     public static final String BLOCKEXPLORER_BASE_URL_PROD = "http://explorer.vertcoin.org/";
     public static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.vertcoin.org/";
 
-    public static final String DONATION_ADDRESS = "VeHzYt4SzTZN5Qnnd4f5zW6MDHPb9mtCtj";  //HashEngineering donation DGC address
+    public static final String DONATION_ADDRESS = "VeHzYt4SzTZN5Qnnd4f5zW6MDHPb9mtCtj";  // donation VTC address
 
     enum CoinHash {
         SHA256,
@@ -203,6 +203,7 @@ public class CoinDefinition {
 	checkpoints.put(48384, new Sha256Hash("8442a9f8b120d9a1769beac12c6d1934797c5c4e55754e55658daaa550338c69"));
 	checkpoints.put(50400, new Sha256Hash("efbe50971fbd5f28d9b253dbdaf9c4202fa549d524d7da96f35b7bc86c3586f2"));
 	checkpoints.put(52416, new Sha256Hash("e2cc3907563bea6a9d6ac8e0411307e4439fe3ed7a1fee113d107e3891f4b1e6"));
+	checkpoints.put(54432, new Sha256Hash("04da82fe66562b33f821f61af7d103d62f27d91752e3a68f19388ec4662641a1"));
     }
 
 
